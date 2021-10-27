@@ -5,34 +5,45 @@
 class Goignore < Formula
   desc "Easy gitignore files from the command line"
   homepage "https://github.com/FollowTheProcess/goignore"
-  version "0.3.4"
+  version "0.3.5"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.3.4/goignore_0.3.4_Darwin_x86_64.tar.gz"
-      sha256 "a7f2a7b35b8e67cb0d43700436b5aca474e7f28c753f823f5003390677a88987"
+      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.3.5/goignore_0.3.5_Darwin_x86_64.tar.gz"
+      sha256 "13fe793f318a904c9fedda2d1469bae5c59c28629daf0b48893fcd7612981444"
+
+      def install
+        bin.install "goignore"
+      end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.3.4/goignore_0.3.4_Darwin_arm64.tar.gz"
-      sha256 "b5ed45a12c2240699e65bd0a3b669ea8f9fb009a5c2733a9015f18919b22f0dd"
+      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.3.5/goignore_0.3.5_Darwin_arm64.tar.gz"
+      sha256 "12a777223a9cd39623588130ddd425dbb39ef895b27a186048c5718f84fc052f"
+
+      def install
+        bin.install "goignore"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.3.4/goignore_0.3.4_Linux_x86_64.tar.gz"
-      sha256 "6b694b7b8499772a3001d4acc384157cac7e5eab1fcffc7967eec8b6f16415b3"
+      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.3.5/goignore_0.3.5_Linux_x86_64.tar.gz"
+      sha256 "9501937e603c940075127e953b5431c16dc57a8201d6f06e05a803f71bf9badf"
+
+      def install
+        bin.install "goignore"
+      end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.3.4/goignore_0.3.4_Linux_arm64.tar.gz"
-      sha256 "6c89217c0176af647c5261101ccd97b39ec040575c45d01a8267bf0b1afdf111"
-    end
-  end
+      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.3.5/goignore_0.3.5_Linux_arm64.tar.gz"
+      sha256 "77f63d051462690a6bdd50932b45b57cb95c5955c950c9f9ae0484eb585d1fa5"
 
-  def install
-    bin.install "goignore"
+      def install
+        bin.install "goignore"
+      end
+    end
   end
 
   test do
