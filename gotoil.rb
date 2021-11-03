@@ -5,21 +5,21 @@
 class Gotoil < Formula
   desc "Handy CLI to automate the development workflow"
   homepage "https://github.com/FollowTheProcess/gotoil"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/gotoil/releases/download/v0.1.2/gotoil_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "75aa4929b21adb7b0b4784abd437adf89129ff1e96be3b42395504d99182913e"
+    if Hardware::CPU.arm?
+      url "https://github.com/FollowTheProcess/gotoil/releases/download/v0.1.3/gotoil_0.1.3_Darwin_arm64.tar.gz"
+      sha256 "42cdfc6e6d5be6fc5dea1222f77fbd2af0fd5b68f2d524fd43ac2cf57ccc13b0"
 
       def install
         bin.install "gotoil"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/gotoil/releases/download/v0.1.2/gotoil_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "70869fede7c83e02f1996b47ea86f7f2febdcdd1257d81490ac114becd00da28"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/gotoil/releases/download/v0.1.3/gotoil_0.1.3_Darwin_x86_64.tar.gz"
+      sha256 "50ea78f960a345275791684983f53aaa88429e047f352ea6fc33ddee0294ce2f"
 
       def install
         bin.install "gotoil"
@@ -28,17 +28,17 @@ class Gotoil < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/gotoil/releases/download/v0.1.2/gotoil_0.1.2_Linux_arm64.tar.gz"
-      sha256 "11db14e7748c10c0703c570b3987426a05b995c3746a53a19bd7ca83ffb71d39"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/gotoil/releases/download/v0.1.3/gotoil_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "cab994bc0d7d8eba23285fec842ce048b987c670add3b537d0047832163d860b"
 
       def install
         bin.install "gotoil"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/gotoil/releases/download/v0.1.2/gotoil_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "461a1f16fdf4d2aef021276ccbf5298902edd1323d517db2faec87a87520fcbc"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/FollowTheProcess/gotoil/releases/download/v0.1.3/gotoil_0.1.3_Linux_arm64.tar.gz"
+      sha256 "65a9f1be3717f402104d7dcd884dffbb9e38b3db4fcdd1431716c1b47ad3e0eb"
 
       def install
         bin.install "gotoil"
