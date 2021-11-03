@@ -5,21 +5,21 @@
 class Tag < Formula
   desc "Interact with semver git tags with ease!"
   homepage "https://github.com/FollowTheProcess/tag"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.4/tag_0.1.4_Darwin_arm64.tar.gz"
-      sha256 "ad9e344ace94e933b7ebe9357b1e05a26a18471438dd77717e273d31199811d6"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.5/tag_0.1.5_Darwin_x86_64.tar.gz"
+      sha256 "8435bc258ec016c12ac6fbdb7f545e4c4fbb6a5e68876be3ba5e30dbfe15a27b"
 
       def install
         bin.install "tag"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.4/tag_0.1.4_Darwin_x86_64.tar.gz"
-      sha256 "a5b99bd172b5fffa76745edf1c304db1e8d65545c3e343279bb8f9795c0a96db"
+    if Hardware::CPU.arm?
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.5/tag_0.1.5_Darwin_arm64.tar.gz"
+      sha256 "cf11eca43d34f47ef770393543c55267f8f3feed441253b246d12931848bc783"
 
       def install
         bin.install "tag"
@@ -28,17 +28,17 @@ class Tag < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.4/tag_0.1.4_Linux_arm64.tar.gz"
-      sha256 "3df0bbcefa251a0bd5cb4fdabae42ac06e03e74b8c4ac6720f79c0e6cff612c6"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.5/tag_0.1.5_Linux_x86_64.tar.gz"
+      sha256 "c6dddef14df440e5bfda902593912e338e98ca8542b29561b75da32c977a07ac"
 
       def install
         bin.install "tag"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.4/tag_0.1.4_Linux_x86_64.tar.gz"
-      sha256 "2a5d49b1dea091cc3d10e740b4e11bdba10cedc312443b3b2c0642a258f7d238"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.5/tag_0.1.5_Linux_arm64.tar.gz"
+      sha256 "3a1f3a4f54c62d113c1da2d969b6e8faf01bae5cf43690731e63b266e716c716"
 
       def install
         bin.install "tag"
