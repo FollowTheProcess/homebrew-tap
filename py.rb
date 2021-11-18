@@ -5,47 +5,43 @@
 class Py < Formula
   desc "Approximate port of Brett Cannon's python-launcher to Go."
   homepage "https://github.com/FollowTheProcess/py"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT License"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.3/py_0.1.3_Darwin_arm64.tar.gz"
-      sha256 "355114bac5ec89d0324f78cbfc39f7e6dc009009d036056bc42e13c9a34acfb8"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.4/py_0.1.4_Darwin_arm64.tar.gz"
+      sha256 "e754385dfaf90057e5dd61be25b7f1919fc4780167a51326d63d3cac3cb8842c"
 
       def install
         bin.install "py"
-        man1.install "docs/man_page/py.1"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.3/py_0.1.3_Darwin_x86_64.tar.gz"
-      sha256 "ed93074a68db3fac66b2eba7cbba9cfb1de9ff65b9e4207ae6a99e21533c9db4"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.4/py_0.1.4_Darwin_x86_64.tar.gz"
+      sha256 "406c550a5a879fb081f3fad98d553cad3f03fbdac7aeb50698bffb30761a9c3a"
 
       def install
         bin.install "py"
-        man1.install "docs/man_page/py.1"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.3/py_0.1.3_Linux_x86_64.tar.gz"
-      sha256 "f85648809d43e41f8dca3dc1f9ed21103b1c35b2175943a7eab21530c3d54e42"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.4/py_0.1.4_Linux_arm64.tar.gz"
+      sha256 "f8968449653d0103a42067ac178996d448ae670a3e8b819ccf3be5ba4134be6b"
 
       def install
         bin.install "py"
-        man1.install "docs/man_page/py.1"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.3/py_0.1.3_Linux_arm64.tar.gz"
-      sha256 "73a02de03163c21ef7512d7b196caf68ac5bceed71190cff58352eb8dfbc5ffe"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.4/py_0.1.4_Linux_x86_64.tar.gz"
+      sha256 "5de41d2c4061ae743507526357c2e5eaa6e9be3803554488078418af1e692421"
 
       def install
         bin.install "py"
-        man1.install "docs/man_page/py.1"
       end
     end
   end
