@@ -5,21 +5,21 @@
 class Py < Formula
   desc "Approximate port of Brett Cannon's python-launcher to Go."
   homepage "https://github.com/FollowTheProcess/py"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT License"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.4/py_0.1.4_Darwin_arm64.tar.gz"
-      sha256 "e754385dfaf90057e5dd61be25b7f1919fc4780167a51326d63d3cac3cb8842c"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.5/py_0.1.5_Darwin_arm64.tar.gz"
+      sha256 "24a58697bc162707c499ea34ca79bca3b215d44832a773030140a7036d54e935"
 
       def install
         bin.install "py"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.4/py_0.1.4_Darwin_x86_64.tar.gz"
-      sha256 "406c550a5a879fb081f3fad98d553cad3f03fbdac7aeb50698bffb30761a9c3a"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.5/py_0.1.5_Darwin_x86_64.tar.gz"
+      sha256 "eab8c455b741f48e4e64567ad62db03ba9b02a602ffced10e16dc1deb9d0d253"
 
       def install
         bin.install "py"
@@ -29,16 +29,16 @@ class Py < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.4/py_0.1.4_Linux_arm64.tar.gz"
-      sha256 "f8968449653d0103a42067ac178996d448ae670a3e8b819ccf3be5ba4134be6b"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.5/py_0.1.5_Linux_arm64.tar.gz"
+      sha256 "94c2fbce803c82da7a4b39b0b9682cf6af9a95383a47d0bed543d9016e31ac1f"
 
       def install
         bin.install "py"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.4/py_0.1.4_Linux_x86_64.tar.gz"
-      sha256 "5de41d2c4061ae743507526357c2e5eaa6e9be3803554488078418af1e692421"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.5/py_0.1.5_Linux_x86_64.tar.gz"
+      sha256 "0fde3d8445d4bdafd929764f165df92a687f20fef6f94dc946ca10fd6b3f6113"
 
       def install
         bin.install "py"
