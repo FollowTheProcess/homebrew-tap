@@ -5,21 +5,21 @@
 class Venv < Formula
   desc "CLI to take the pain out of python virtual environments."
   homepage "https://github.com/FollowTheProcess/venv"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache Software License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/venv/releases/download/v0.1.2/venv_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "e516a558daf1145ad9f3f2b7b31f82d3fd86813a660b9a187c17b187d8643a34"
+      url "https://github.com/FollowTheProcess/venv/releases/download/v0.1.3/venv_0.1.3_Darwin_x86_64.tar.gz"
+      sha256 "399e08a15065301cd222cef0d1f5157220db4e5a2f7d0a1dee1aa9df618c3b5b"
 
       def install
         bin.install "venv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/venv/releases/download/v0.1.2/venv_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "715aab8925ff2397e2074d2ee4561de001ccd0524ed1fe1d4bf5a7915f64727d"
+      url "https://github.com/FollowTheProcess/venv/releases/download/v0.1.3/venv_0.1.3_Darwin_arm64.tar.gz"
+      sha256 "8b1e847dae85b33556e995e55059fcdb8db75eaee80437208badaad4db60b1a8"
 
       def install
         bin.install "venv"
@@ -29,16 +29,16 @@ class Venv < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/venv/releases/download/v0.1.2/venv_0.1.2_Linux_arm64.tar.gz"
-      sha256 "52311fbd9bbb4b859af809bae34205abd1096dc381626c5edc80124a83ec899d"
+      url "https://github.com/FollowTheProcess/venv/releases/download/v0.1.3/venv_0.1.3_Linux_arm64.tar.gz"
+      sha256 "3c5f2c9aed3fe95dbf71f1ebb141031d2788b698ae983a952af86ada5b42d7a8"
 
       def install
         bin.install "venv"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/venv/releases/download/v0.1.2/venv_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "da9a2c3d8e1da3ea3a3e3f3962906308cb9cb328bd84a6eb0226239dbca9582e"
+      url "https://github.com/FollowTheProcess/venv/releases/download/v0.1.3/venv_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "8de51089a75cc6faa42a78a34579ac7da886a7795ced1bafd3059d99c22bb7e3"
 
       def install
         bin.install "venv"
