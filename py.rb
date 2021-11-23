@@ -5,21 +5,21 @@
 class Py < Formula
   desc "Approximate port of Brett Cannon's python-launcher to Go."
   homepage "https://github.com/FollowTheProcess/py"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT License"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.5/py_0.1.5_Darwin_arm64.tar.gz"
-      sha256 "24a58697bc162707c499ea34ca79bca3b215d44832a773030140a7036d54e935"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.6/py_0.1.6_Darwin_x86_64.tar.gz"
+      sha256 "9f4ca815d6a054c12d070307781fe792f9e8a6cb65d435faf4127fb158a36808"
 
       def install
         bin.install "py"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.5/py_0.1.5_Darwin_x86_64.tar.gz"
-      sha256 "eab8c455b741f48e4e64567ad62db03ba9b02a602ffced10e16dc1deb9d0d253"
+    if Hardware::CPU.arm?
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.6/py_0.1.6_Darwin_arm64.tar.gz"
+      sha256 "c870c088433b0aa8f68a77af8353ea7165cdd3317dfcce2a2dd6abf7ed24f66f"
 
       def install
         bin.install "py"
@@ -29,16 +29,16 @@ class Py < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.5/py_0.1.5_Linux_arm64.tar.gz"
-      sha256 "94c2fbce803c82da7a4b39b0b9682cf6af9a95383a47d0bed543d9016e31ac1f"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.6/py_0.1.6_Linux_arm64.tar.gz"
+      sha256 "3c60d7c3843b7cacd3f9627717a34fcd4ab731528140b1baf50be98f6a6ff67b"
 
       def install
         bin.install "py"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.5/py_0.1.5_Linux_x86_64.tar.gz"
-      sha256 "0fde3d8445d4bdafd929764f165df92a687f20fef6f94dc946ca10fd6b3f6113"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.1.6/py_0.1.6_Linux_x86_64.tar.gz"
+      sha256 "ab8f8a02933fddf4928a0826318b51977ab2fbd77b23da61db7b1763559f0d37"
 
       def install
         bin.install "py"
