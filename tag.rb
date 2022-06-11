@@ -5,21 +5,21 @@
 class Tag < Formula
   desc "Easy semantic versioning from the command line"
   homepage "https://github.com/FollowTheProcess/tag"
-  version "0.1.6"
+  version "0.2.0"
   license "Apache Software License 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.6/tag_0.1.6_Darwin_arm64.tar.gz"
-      sha256 "62c057d4969aa96e8b48b75adcec1b6268b2d886074097bcccc9805c2931becf"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.2.0/tag_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "e49fcf6063ef14a8c02e048f1a748d2e386b077bfb24bb91270d2b82c5fb47c3"
 
       def install
         bin.install "tag"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.6/tag_0.1.6_Darwin_x86_64.tar.gz"
-      sha256 "93d692623b5f09ca3c97ccdb9f84242137c5df2a2423df496833384a5141ab78"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.2.0/tag_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "fbfe939983e7c3830860e05a7669c371efc8944471798ffe6368a16453724b6e"
 
       def install
         bin.install "tag"
@@ -29,16 +29,16 @@ class Tag < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.6/tag_0.1.6_Linux_x86_64.tar.gz"
-      sha256 "663661523a75dab8076558a8e0c95454602b6be9e91292b494c13bc76a3d0d7e"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.2.0/tag_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "8f29b156bbe040ca29cbd0e9f405d176dc09d5b931e387ac7b2b39b8540ad792"
 
       def install
         bin.install "tag"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.6/tag_0.1.6_Linux_arm64.tar.gz"
-      sha256 "06b56c2a16b38d983392d83ede8ecfd3eee761f026bb9830c2d95f5823bf632d"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.2.0/tag_0.2.0_Linux_arm64.tar.gz"
+      sha256 "b9aaca4dc015a510f194e523218e02b81dc5e6852dcab87c420f8598af222566"
 
       def install
         bin.install "tag"
