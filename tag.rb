@@ -5,21 +5,21 @@
 class Tag < Formula
   desc "Easy semantic versioning from the command line"
   homepage "https://github.com/FollowTheProcess/tag"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache Software License 2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.0/tag_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "7a8b51901dc73ea66ee61b8a733d0c3b0ed96cd61f4c75f51d883751805ada5c"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.1/tag_0.1.1_Darwin_x86_64.tar.gz"
+      sha256 "5ed4a683d9efbd5eb07eef3b14c0092b702d579e9445221e69f5a6be14d3f3ba"
 
       def install
         bin.install "tag"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.0/tag_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "bd87d04e979c478e4cc1efea4dabce4b371367b01cd43e0ae5756342dab25ae3"
+    if Hardware::CPU.arm?
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.1/tag_0.1.1_Darwin_arm64.tar.gz"
+      sha256 "ef31783e41059b26da935a7c09391edfb70ebb2430f29a7bcfa6057a5d42e572"
 
       def install
         bin.install "tag"
@@ -29,16 +29,16 @@ class Tag < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.0/tag_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "ca863c4c27d98a5bd933559b8484796ac222069d1eb38a525a9cd9ef13cd9bb0"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.1/tag_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "4a0361fa9a3eb3a59e263eefa1c747a94a84f0e04f65a11e7264eef67fece413"
 
       def install
         bin.install "tag"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.0/tag_0.1.0_Linux_arm64.tar.gz"
-      sha256 "f342e6c8e2351157326f74bc1dcdb58218bdae0b3ee41a2d2d47ba3d46b77ef5"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.1.1/tag_0.1.1_Linux_arm64.tar.gz"
+      sha256 "100fbe53751e4cd10207803ad4e0f5fd0eb35c8f4b499b8aa943ebe270fb0657"
 
       def install
         bin.install "tag"
