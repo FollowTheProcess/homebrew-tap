@@ -5,21 +5,21 @@
 class Spok < Formula
   desc "It's a build system Jim, but not as we know it!"
   homepage "https://github.com/FollowTheProcess/spok"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache Software License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.1.1/spok_Darwin_x86_64.tar.gz"
-      sha256 "8cf0ab893f04839c9fe78a7ff99c161322bff6d4d03075776e77e03c9d6c7b9f"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.1.2/spok_Darwin_x86_64.tar.gz"
+      sha256 "4c3724c35e839776cd02c58d72b77de94dcc5797b808449077041403f80fe372"
 
       def install
         bin.install "spok"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.1.1/spok_Darwin_arm64.tar.gz"
-      sha256 "b092596dd8b3e282a77195c66e792a0ad6b1c027c355c633e033dc6b13ae5fd0"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.1.2/spok_Darwin_arm64.tar.gz"
+      sha256 "8a5b18b3ca4ad2abb9d8b790986e4267a4feba0601b177d1ac342d5d0b1e96f1"
 
       def install
         bin.install "spok"
@@ -29,16 +29,16 @@ class Spok < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.1.1/spok_Linux_x86_64.tar.gz"
-      sha256 "48a140451c094b56f121b536063cde64898aa4760b686517f9e8810d291e53fc"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.1.2/spok_Linux_x86_64.tar.gz"
+      sha256 "d2f63c78d3c15a6fb2ad662c32724667b46b42e1b86f5c28213cf480a3c8b313"
 
       def install
         bin.install "spok"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.1.1/spok_Linux_arm64.tar.gz"
-      sha256 "50f2558a95774db1a2630099e79ed472ef22b729c04d2f7d89e48f3f5a0d052c"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.1.2/spok_Linux_arm64.tar.gz"
+      sha256 "79f81063d3f9fc3907fee0f501f4f3e2a6ad5afc58bcb795375ae8b204e252d0"
 
       def install
         bin.install "spok"
