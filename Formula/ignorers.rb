@@ -16,6 +16,6 @@ class Ignorers < Formula
   end
 
   def install
-    bin.install "ig"
+    bin.install "ignorers"
   end
 end
