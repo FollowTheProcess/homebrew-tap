@@ -4,21 +4,21 @@
 class Ignorers < Formula
   desc "Generate gitignores from the command line."
   homepage "https://github.com/FollowTheProcess/ignorers"
-  version "0.1.0"
+  version "0.1.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/ignorers/releases/download/v0.1.0/ig-0.1.0-darwin-amd64.tar.gz"
-      sha256 "98d36b375ad1985ce4b1b9d47ae46444283612a371f61796ba702bacea52bef6"
+      url "https://github.com/FollowTheProcess/ignorers/releases/download/v0.1.2/ig-0.1.2-darwin-amd64.tar.gz"
+      sha256 "7177b4373da5235cc476e641eed7029280faeabda33fd7ffe87fba17a5169a91"
 
       def install
         bin.install "ig"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/ignorers/releases/download/v0.1.0/ig-0.1.0-darwin-arm64.tar.gz"
-      sha256 "ea14897b1a2b47d75dd2a06fb6f5d3a4e40803489829f61f462e39142d59eb10"
+      url "https://github.com/FollowTheProcess/ignorers/releases/download/v0.1.2/ig-0.1.2-darwin-arm64.tar.gz"
+      sha256 "7ecee68a8e93a3b4a9c0bd6d76cf841187be62f768b86d0698c672a6d908a6e9"
 
       def install
         bin.install "ig"
@@ -28,8 +28,8 @@ class Ignorers < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/ignorers/releases/download/v0.1.0/ig-0.1.0-linux-amd64.tar.gz"
-      sha256 "98b0eaa339d2116fe976f1b1ce796b9a555b0456c2caf40e6c3718574aa739da"
+      url "https://github.com/FollowTheProcess/ignorers/releases/download/v0.1.2/ig-0.1.2-linux-amd64.tar.gz"
+      sha256 "61fc599ff2fb8b5e36f2eaff344c476e64caf3b0288524ff20c08d0b3a9063c6"
 
       def install
         bin.install "ig"
