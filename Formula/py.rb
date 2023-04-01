@@ -10,7 +10,7 @@ class Py < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.2/py_ 0.3.2-darwin_arm64.tar.gz"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.2/py_0.3.2-darwin_arm64.tar.gz"
       sha256 "bcc0ea28a0b903164e91f25b24035dd5e70c8b249d7be61f0ad1dc58148e2891"
 
       def install
@@ -18,7 +18,7 @@ class Py < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.2/py_ 0.3.2-darwin_x86_64.tar.gz"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.2/py_0.3.2-darwin_x86_64.tar.gz"
       sha256 "821aa78b8287aeb4123ae4a4eeb688f5a2f26cf5468d6d64594b62ef20cffe27"
 
       def install
@@ -29,7 +29,7 @@ class Py < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.2/py_ 0.3.2-linux_arm64.tar.gz"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.2/py_0.3.2-linux_arm64.tar.gz"
       sha256 "0e236d9251c5465ac8c5c8f9d318826fdcdc84294b9643f90ea29b1134f2e55c"
 
       def install
@@ -37,7 +37,7 @@ class Py < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.2/py_ 0.3.2-linux_x86_64.tar.gz"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.2/py_0.3.2-linux_x86_64.tar.gz"
       sha256 "f1ce4ce5b88a2c6b67e6b03399f5c1e0a2de407725e211ad683b4489cb10729f"
 
       def install
