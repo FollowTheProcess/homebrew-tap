@@ -5,21 +5,21 @@
 class Py < Formula
   desc "Approximate port of Brett Cannon's python-launcher to Go."
   homepage "https://github.com/FollowTheProcess/py"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT License"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.0/py_0.3.0_Darwin_x86_64.tar.gz"
-      sha256 "c4e020bfb4b67d4ed038359c8788c22c16f39f89b1bfe24440316d76dfb6cf78"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.1/py_ 0.3.1-darwin_x86_64{% endraw %}.tar.gz"
+      sha256 "47964d5fea27ae672d4a68816874bfab2c13872ec1105bda36bdd81924a69bce"
 
       def install
         bin.install "py"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.0/py_0.3.0_Darwin_arm64.tar.gz"
-      sha256 "35a8b89b44bf92584bbcd7b0a6aa8873f9eda47982d058c5fd4603a700c7bd02"
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.1/py_ 0.3.1-darwin_arm64{% endraw %}.tar.gz"
+      sha256 "6b495fffdac579655fcc7b6f741e227777fd8b8c505112375ac0a8cb46f8d089"
 
       def install
         bin.install "py"
@@ -28,17 +28,17 @@ class Py < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.0/py_0.3.0_Linux_arm64.tar.gz"
-      sha256 "99f9d188865dca5c60b4eb634666f7b7d33113056561e9c24e8350811b5673d5"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.1/py_ 0.3.1-linux_x86_64{% endraw %}.tar.gz"
+      sha256 "75a3033f74497cc42a283676996297cfb831d98b6724f4dbe319dcd12c963e5f"
 
       def install
         bin.install "py"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.0/py_0.3.0_Linux_x86_64.tar.gz"
-      sha256 "44a42b5f3b22327f9d93447a35a7aeac0bd278118af9017b481f9276a0a46058"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/FollowTheProcess/py/releases/download/v0.3.1/py_ 0.3.1-linux_arm64{% endraw %}.tar.gz"
+      sha256 "352ed84fe4d5862ee41137fc1cbc34a5686d6ac239edcc58034647b364df9012"
 
       def install
         bin.install "py"
