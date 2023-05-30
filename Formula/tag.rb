@@ -14,7 +14,7 @@ class Tag < Formula
       sha256 "6d52a95d925b1638b83df3063a5918ddd31bbe1bdb01d16dbff759f8678c52ac"
 
       def install
-        bin.install tag
+        bin.install "tag"
       end
     end
     if Hardware::CPU.intel?
@@ -22,7 +22,7 @@ class Tag < Formula
       sha256 "11781c05becbcaeaaa43d725c5d2652fc55b6258acb83193d5b8d4f84b406ce9"
 
       def install
-        bin.install tag
+        bin.install "tag"
       end
     end
   end
@@ -33,7 +33,7 @@ class Tag < Formula
       sha256 "d98132fa3644b9ecd6012f1f0838be37ddf447c00a2c48e28dceb2a031c8876a"
 
       def install
-        bin.install tag
+        bin.install "tag"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
@@ -41,7 +41,7 @@ class Tag < Formula
       sha256 "6c09512242692c81e75fb94d455370d251c2a25a4277373635cc6acfcca10bc0"
 
       def install
-        bin.install tag
+        bin.install "tag"
       end
     end
   end
