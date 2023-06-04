@@ -5,21 +5,21 @@
 class Tag < Formula
   desc "The all in one semver management tool"
   homepage "https://github.com/FollowTheProcess/tag"
-  version "0.4.0"
+  version "0.4.2"
   license "Apache Software License 2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.4.0/tag-0.4.0-darwin-arm64.tar.gz"
-      sha256 "6d52a95d925b1638b83df3063a5918ddd31bbe1bdb01d16dbff759f8678c52ac"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.4.2/tag-0.4.2-darwin-x86_64.tar.gz"
+      sha256 "7ab145d787d7b7f81c32e80422e70e25cc354c4f9830ed48342b326842fd1213"
 
       def install
         bin.install "tag"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.4.0/tag-0.4.0-darwin-x86_64.tar.gz"
-      sha256 "11781c05becbcaeaaa43d725c5d2652fc55b6258acb83193d5b8d4f84b406ce9"
+    if Hardware::CPU.arm?
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.4.2/tag-0.4.2-darwin-arm64.tar.gz"
+      sha256 "71d929b9a2b1e4d6590dd0b3bacb1f200d927bf1790bad35d62eaee912780db6"
 
       def install
         bin.install "tag"
@@ -28,17 +28,17 @@ class Tag < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.4.0/tag-0.4.0-linux-x86_64.tar.gz"
-      sha256 "d98132fa3644b9ecd6012f1f0838be37ddf447c00a2c48e28dceb2a031c8876a"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.4.2/tag-0.4.2-linux-arm64.tar.gz"
+      sha256 "3ea796a0124039a36a61ef55c366dad1d80d06e9d3d38e76bc7d1b1eb9598789"
 
       def install
         bin.install "tag"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.4.0/tag-0.4.0-linux-arm64.tar.gz"
-      sha256 "6c09512242692c81e75fb94d455370d251c2a25a4277373635cc6acfcca10bc0"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.4.2/tag-0.4.2-linux-x86_64.tar.gz"
+      sha256 "91116cad97bfe893c56a9ad7cb51a729401d6bf8e974da1ea4bc0a4fc3fe878c"
 
       def install
         bin.install "tag"
