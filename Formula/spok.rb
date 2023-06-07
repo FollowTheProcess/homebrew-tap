@@ -5,21 +5,21 @@
 class Spok < Formula
   desc "It's a build system Jim, but not as we know it!"
   homepage "https://github.com/FollowTheProcess/spok"
-  version "0.2.1"
+  version "0.2.2"
   license "Apache Software License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.2.1/spok-0.2.1-darwin-x86_64.tar.gz"
-      sha256 "3e92d1bd554ee6e2df7e96f673111f0e155690449416dd065afcbcc940436ab2"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.2.2/spok-0.2.2-darwin-x86_64.tar.gz"
+      sha256 "1b6d43033bb9e9d32f643211449cc8e714726163a0422f34591cabbbe29feaab"
 
       def install
         bin.install "spok"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.2.1/spok-0.2.1-darwin-arm64.tar.gz"
-      sha256 "a4a888507110bc2577cd31abf20fb729871628ada876bef6c116fdfbef8b35ac"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.2.2/spok-0.2.2-darwin-arm64.tar.gz"
+      sha256 "3a6666c6bcc34553d0f5782ef17e2edbf08c2734689133d70d196f5e02ac79cd"
 
       def install
         bin.install "spok"
@@ -28,17 +28,17 @@ class Spok < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.2.1/spok-0.2.1-linux-arm64.tar.gz"
-      sha256 "a68a5a482a4a11a0fa3f5cae50dc92fc209fcd632704b062109af0a4193b0bcb"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.2.2/spok-0.2.2-linux-x86_64.tar.gz"
+      sha256 "cb3a2b812b5ef62a45348529fd3643fb8d680ee0f49b1162fe02e784200375cf"
 
       def install
         bin.install "spok"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.2.1/spok-0.2.1-linux-x86_64.tar.gz"
-      sha256 "4395a52d95bd7eb99fee230989b5c2ea26567c609a3e752768ea0f3cdaa97e8c"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.2.2/spok-0.2.2-linux-arm64.tar.gz"
+      sha256 "80d1067dfcfb93b43210cd904129b3e9c07328ffb7950ea45c81287266f0e3d9"
 
       def install
         bin.install "spok"
