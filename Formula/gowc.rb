@@ -5,21 +5,21 @@
 class Gowc < Formula
   desc "Toy clone of coreutils wc in Go"
   homepage "https://github.com/FollowTheProcess/gowc"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT License"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.1.1/gowc-0.1.1-darwin-x86_64.tar.gz"
-      sha256 "e3686d6650444bbcf81853b2429f6e3d2886348e55d3e6bd3f486f13bf148f2c"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.2.0/gowc-0.2.0-darwin-x86_64.tar.gz"
+      sha256 "e52d7590233f0dcddce3ff08b221858d2766561939ccae7fbb676c04948c9af9"
 
       def install
         bin.install "gowc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.1.1/gowc-0.1.1-darwin-arm64.tar.gz"
-      sha256 "bd81589879d159731ecf97586775c3217c219ff743506028ab28d641a04f3d51"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.2.0/gowc-0.2.0-darwin-arm64.tar.gz"
+      sha256 "d7ca8f20b01b10a0da6dca7817566031fd6683f12ab85bc51652ff1bbb718dd9"
 
       def install
         bin.install "gowc"
@@ -29,16 +29,16 @@ class Gowc < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.1.1/gowc-0.1.1-linux-x86_64.tar.gz"
-      sha256 "f481e8275a37dd77abd8b77274becc6cf49b78e65906f9477f863d5c948a4cac"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.2.0/gowc-0.2.0-linux-x86_64.tar.gz"
+      sha256 "52323f6dcee9de2d8450ca5d6ac3a767c82792e787897ea840e2381bd5c5eebc"
 
       def install
         bin.install "gowc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.1.1/gowc-0.1.1-linux-arm64.tar.gz"
-      sha256 "3c7777e22b83d78957ba50db40018b1820825fbe8ed56aa2ed39d021a90a20ef"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.2.0/gowc-0.2.0-linux-arm64.tar.gz"
+      sha256 "108fcb584bb13654cb8d4350b9783da1043cc387469ac618889b1380ef9e6fa4"
 
       def install
         bin.install "gowc"
