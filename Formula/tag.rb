@@ -5,21 +5,21 @@
 class Tag < Formula
   desc "The all in one semver management tool"
   homepage "https://github.com/FollowTheProcess/tag"
-  version "0.5.0"
+  version "0.6.0"
   license "Apache Software License 2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.5.0/tag-0.5.0-darwin-x86_64.tar.gz"
-      sha256 "a3c4b838a4c0e23c320f06ba24d30b285d2c8ab2fa39f41a67fc67143432b0db"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.6.0/tag-0.6.0-darwin-x86_64.tar.gz"
+      sha256 "1bcd1ebf9668e706bc22782518c2dcb335e68955a48c9e71a2fa051a1e0afe95"
 
       def install
         bin.install "tag"
       end
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.5.0/tag-0.5.0-darwin-arm64.tar.gz"
-      sha256 "26c3ebc53958f2c9d4ba3dd69d15960f8192b2f05ef220e1a1897beec91913bb"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.6.0/tag-0.6.0-darwin-arm64.tar.gz"
+      sha256 "b4e265b72c65bfd354df5ba03856dbb6c2d09bd59332c5af446ca6d64aa0e026"
 
       def install
         bin.install "tag"
@@ -30,8 +30,8 @@ class Tag < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/FollowTheProcess/tag/releases/download/v0.5.0/tag-0.5.0-linux-x86_64.tar.gz"
-        sha256 "081d93131f9625ffc2454cd92b2f54f562405e967d676b2bbd4c662c93f5f88b"
+        url "https://github.com/FollowTheProcess/tag/releases/download/v0.6.0/tag-0.6.0-linux-x86_64.tar.gz"
+        sha256 "c8423e613ff5095cd311f86fe0fb037582e69d4cffc4c6fbbf2e475315b8cf5d"
 
         def install
           bin.install "tag"
@@ -40,8 +40,8 @@ class Tag < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/FollowTheProcess/tag/releases/download/v0.5.0/tag-0.5.0-linux-arm64.tar.gz"
-        sha256 "40413bfa4a2686caba791e93c0723f146361d995a58907750511b8fe0f6ff1ad"
+        url "https://github.com/FollowTheProcess/tag/releases/download/v0.6.0/tag-0.6.0-linux-arm64.tar.gz"
+        sha256 "86b95180d78aa56ed27b131bd1ed24dc9ea170cce7c720df70753ac869997341"
 
         def install
           bin.install "tag"
