@@ -5,21 +5,21 @@
 class Gowc < Formula
   desc "Implementation of wc in Go"
   homepage "https://github.com/FollowTheProcess/gowc"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT License"
 
   on_macos do
-    on_intel do
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.3.1/gowc-0.3.1-darwin-x86_64.tar.gz"
-      sha256 "a33b20f58654889fd0bf2ab4414b3b484cf14aa36bf4196e06e78e7810c524cf"
+    if Hardware::CPU.intel?
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.4.0/gowc-0.4.0-darwin-x86_64.tar.gz"
+      sha256 "bd026e47ef264ba4a7505d5b58a2b8499824e2f2719111534a27966ed5fc7d83"
 
       def install
         bin.install "gowc"
       end
     end
-    on_arm do
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.3.1/gowc-0.3.1-darwin-arm64.tar.gz"
-      sha256 "0110f50554f36c3b17a5a01d620dc44db667b65b0c7cef4832fa13143a587532"
+    if Hardware::CPU.arm?
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.4.0/gowc-0.4.0-darwin-arm64.tar.gz"
+      sha256 "e2482585c583b4654333c1ffc1e6f542905270d01da517df7de8ab805b88c9a9"
 
       def install
         bin.install "gowc"
@@ -28,20 +28,20 @@ class Gowc < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/FollowTheProcess/gowc/releases/download/v0.3.1/gowc-0.3.1-linux-x86_64.tar.gz"
-        sha256 "3ac1a2e48ab7931e2519fa0ea1aeb926923b42a1b631f347e997ad011fe27848"
+        url "https://github.com/FollowTheProcess/gowc/releases/download/v0.4.0/gowc-0.4.0-linux-x86_64.tar.gz"
+        sha256 "c789dec5921aa0f7478f342bd0cd4b3e34685ae108b30d9453ee45f798f59a4c"
 
         def install
           bin.install "gowc"
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/FollowTheProcess/gowc/releases/download/v0.3.1/gowc-0.3.1-linux-arm64.tar.gz"
-        sha256 "fc67f2f2e7a250580213ff5c021600203fa290161af3659836d2d60b1319e6d9"
+        url "https://github.com/FollowTheProcess/gowc/releases/download/v0.4.0/gowc-0.4.0-linux-arm64.tar.gz"
+        sha256 "e8e0bf08963307ba67790f2145c2453a75a3746c034292aeb5e63306aed389f7"
 
         def install
           bin.install "gowc"
