@@ -5,21 +5,21 @@
 class Txtract < Formula
   desc "A CLI to interact with txtar archive files"
   homepage "https://github.com/FollowTheProcess/txtract"
-  version "0.2.1"
+  version "0.2.2"
   license "Apache Software License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.2.1/txtract-0.2.1-darwin-x86_64.tar.gz"
-      sha256 "b1a501e3447549507d1657e201515826d3a33868da0c9cdac8f398ca33fa571f"
+      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.2.2/txtract-0.2.2-darwin-x86_64.tar.gz"
+      sha256 "1b66d82cbae4347e9da897056842ea5df679be1d8848bf520c08ed452a43f12a"
 
       def install
         bin.install "txtract"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.2.1/txtract-0.2.1-darwin-arm64.tar.gz"
-      sha256 "0979a652713c88eb5a30f94872442b52e32069fd2aa0b5271e03d623c946c980"
+      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.2.2/txtract-0.2.2-darwin-arm64.tar.gz"
+      sha256 "c0fc50bebcd2bef8ee76d6709a2b1fd2171d4790e4dcff6b2ecf2acd04c8778b"
 
       def install
         bin.install "txtract"
@@ -30,8 +30,8 @@ class Txtract < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/FollowTheProcess/txtract/releases/download/v0.2.1/txtract-0.2.1-linux-x86_64.tar.gz"
-        sha256 "a6d75e6f01f03caf0227a57024cac90ebf4d196a515f2e488675a4f16950157a"
+        url "https://github.com/FollowTheProcess/txtract/releases/download/v0.2.2/txtract-0.2.2-linux-x86_64.tar.gz"
+        sha256 "fc82a96155e76de1be7e4fb470508e6233c44564349895c2a01746229d217b4c"
 
         def install
           bin.install "txtract"
@@ -40,8 +40,8 @@ class Txtract < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/FollowTheProcess/txtract/releases/download/v0.2.1/txtract-0.2.1-linux-arm64.tar.gz"
-        sha256 "36f0354ab203ff350dba22112d27243f1f0b0a066d3834ccfcccbd22f74331fe"
+        url "https://github.com/FollowTheProcess/txtract/releases/download/v0.2.2/txtract-0.2.2-linux-arm64.tar.gz"
+        sha256 "d6cdb2026b4e5ee1cb4954216fa2332d6a5a13640a343584d77c2bd6ea6d308f"
 
         def install
           bin.install "txtract"
