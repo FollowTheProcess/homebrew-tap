@@ -2,7 +2,7 @@
 cask "goignore" do
   desc "An extremely simple Go CLI to hit the gitignore.io API"
   homepage "https://github.com/FollowTheProcess/goignore"
-  version "0.5.0"
+  version "0.5.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "goignore" do
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.5.0/goignore-0.5.0-darwin-x86_64.tar.gz"
-      sha256 "849d50e28b3acd1d693653df13c5172fca2fe33ee7fc0e5fdaab84153ed96d8d"
+      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.5.1/goignore-0.5.1-darwin-x86_64.tar.gz"
+      sha256 "d621b5ae12b588d5ae145495acb55867a7a440a1b88fcc32dd8a42bf24b4b06c"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.5.0/goignore-0.5.0-darwin-arm64.tar.gz"
-      sha256 "e4a9c5fd0fde4b1b92f40153126f4187ae856aff22bc5edb51b586893647a97f"
+      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.5.1/goignore-0.5.1-darwin-arm64.tar.gz"
+      sha256 "1692efad2df4c59bcdb302a232ab254120c00a0c143c0af0eb5560c3c6e527d3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.5.0/goignore-0.5.0-linux-x86_64.tar.gz"
-      sha256 "334fd05d593c9de19df5831f02bdd8c31fec8e0ac86c51c7cb1010b08cb45dbc"
+      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.5.1/goignore-0.5.1-linux-x86_64.tar.gz"
+      sha256 "9924be73d697461546ed0568d0554b579bfcdb5e6990a95f091f6225637c7697"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.5.0/goignore-0.5.0-linux-arm64.tar.gz"
-      sha256 "89ec3672bf3adc1e32e371a694d1c2491e9b688912d86cf2038d1c807ad90271"
+      url "https://github.com/FollowTheProcess/goignore/releases/download/v0.5.1/goignore-0.5.1-linux-arm64.tar.gz"
+      sha256 "ea2ee8f5d767f477ae97feae6a2a6586d548bbf2b036f55b82d0f943bd970284"
     end
   end
 
