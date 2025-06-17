@@ -7,6 +7,7 @@ class Tag < Formula
   homepage "https://github.com/FollowTheProcess/tag"
   version "0.7.0"
   license "Apache Software License 2.0"
+  disable! date: "2025-06-17", because: "the cask should be used now instead", replacement_cask: "tag"
 
   on_macos do
     if Hardware::CPU.intel?
