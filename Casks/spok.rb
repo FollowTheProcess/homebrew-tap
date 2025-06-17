@@ -2,7 +2,7 @@
 cask "spok" do
   desc "It's a build system Jim, but not as we know it!"
   homepage "https://github.com/FollowTheProcess/spok"
-  version "0.7.0"
+  version "0.7.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "spok" do
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.7.0/spok-0.7.0-darwin-x86_64.tar.gz"
-      sha256 "6dfbee2faf8eb9f1ece7b95d5fbff09cb32d7fd244ca4f76cbb758b13242373f"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.7.1/spok-0.7.1-darwin-x86_64.tar.gz"
+      sha256 "e5ddf205937df66ff9aede1b8de13a586b8561efafb06516cc08c3476d3205a7"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.7.0/spok-0.7.0-darwin-arm64.tar.gz"
-      sha256 "124cfdc4623fb0381549a4c34df3f0a6b322fd51c72b2f45f0cf6e7842f313f0"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.7.1/spok-0.7.1-darwin-arm64.tar.gz"
+      sha256 "a9d8caea2ee9485df67be656d1d0ee50020300c45542c6f06d96f1426a440ae1"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.7.0/spok-0.7.0-linux-x86_64.tar.gz"
-      sha256 "e690540353542bd31c7b655160b08ebfdc84ebe5ae6d32d635e3b515770f3886"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.7.1/spok-0.7.1-linux-x86_64.tar.gz"
+      sha256 "348343082b0300537a4e7d28d873c566f49b477c39bb7541a22f4737bc6b153a"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.7.0/spok-0.7.0-linux-arm64.tar.gz"
-      sha256 "0c24a02798e64b926cf55ea40adb7fc91e188fe664188afa0b3aebfb4909ef66"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.7.1/spok-0.7.1-linux-arm64.tar.gz"
+      sha256 "35e3cdcc872d03c239b360c25c9934750582f5990216118758e8cd2e94932ca5"
     end
   end
 
