@@ -7,6 +7,7 @@ class Gowc < Formula
   homepage "https://github.com/FollowTheProcess/gowc"
   version "0.4.0"
   license "MIT License"
+  disable! date: "2025-06-17", because: "the cask should be used now instead", replacement_cask: "gowc"
 
   on_macos do
     if Hardware::CPU.intel?

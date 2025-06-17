@@ -7,6 +7,7 @@ class Py < Formula
   homepage "https://github.com/FollowTheProcess/py"
   version "0.3.2"
   license "MIT License"
+  deprecate! date: "2025-06-17", because: "no longer supported", replacement_formula: "python-launcher"
 
   on_macos do
     if Hardware::CPU.arm?

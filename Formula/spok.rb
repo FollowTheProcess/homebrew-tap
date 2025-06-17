@@ -7,6 +7,7 @@ class Spok < Formula
   homepage "https://github.com/FollowTheProcess/spok"
   version "0.6.1"
   license "Apache Software License 2.0"
+  disable! date: "2025-06-17", because: "the cask should be used now instead", replacement_cask: "spok"
 
   on_macos do
     if Hardware::CPU.intel?
