@@ -6,6 +6,7 @@ class Ignorers < Formula
   homepage "https://github.com/FollowTheProcess/ignorers"
   version "0.1.4"
   license "Apache-2.0"
+  deprecate! date: "2025-06-17", because: "no longer supported", replacement_formula: "goignore"
 
   on_macos do
     if Hardware::CPU.intel?
