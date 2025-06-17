@@ -2,7 +2,7 @@
 cask "txtract" do
   desc "A CLI to interact with txtar archive files"
   homepage "https://github.com/FollowTheProcess/txtract"
-  version "0.3.0"
+  version "0.3.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "txtract" do
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.0/txtract-0.3.0-darwin-x86_64.tar.gz"
-      sha256 "9c9e31937001dfe8a364e101e579b63bd82c39527d67006d836070f569563a9d"
+      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.1/txtract-0.3.1-darwin-x86_64.tar.gz"
+      sha256 "087dc9d54410c98d917abd2a70a9330480e97254633eeab7f36b3fe6ea7fd97e"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.0/txtract-0.3.0-darwin-arm64.tar.gz"
-      sha256 "4c57462b314a6bd91f135c520456dc4a8317feb8c3f79de634905592fc2acf49"
+      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.1/txtract-0.3.1-darwin-arm64.tar.gz"
+      sha256 "04de02d82cd2d6547ed57cf992d1f4dad394755f321c938d0c159d1299295739"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.0/txtract-0.3.0-linux-x86_64.tar.gz"
-      sha256 "db0eb1a600d4a0e530cad76616211bd502a99cfb9a2a013d1a86c83b359544eb"
+      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.1/txtract-0.3.1-linux-x86_64.tar.gz"
+      sha256 "5bc3652aacaba6439878b3c19b1170c20b25b20e172b998a15d2d36ed8f04a2b"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.0/txtract-0.3.0-linux-arm64.tar.gz"
-      sha256 "27cbcb6206c3ec9bbed2ccc304f2cfa631196f00e0282752784c318fc7f0fa1b"
+      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.1/txtract-0.3.1-linux-arm64.tar.gz"
+      sha256 "3c4a4e3e087f374316264b7afba91503518811de5a99467bf9bd8d43560fb1ee"
     end
   end
 
