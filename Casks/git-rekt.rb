@@ -2,7 +2,7 @@
 cask "git-rekt" do
   desc "A profoundly unhelpful git extension"
   homepage "https://github.com/FollowTheProcess/git-rekt"
-  version "0.3.1"
+  version "0.4.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "git-rekt" do
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.3.1/git-rekt-0.3.1-darwin-x86_64.tar.gz"
-      sha256 "fa72760069b13bf7a8cfeaec6d0c110489ab1bb90bf3a115ccab67d2c2399810"
+      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.0/git-rekt-0.4.0-darwin-x86_64.tar.gz"
+      sha256 "137412021947630c727da68f03eff76ebcd8f1d6f8783a2402361770a7229d64"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.3.1/git-rekt-0.3.1-darwin-arm64.tar.gz"
-      sha256 "8e8144af72a2dae1a76aed04ce9d1ab19e5fdf620ded1fd700483955b5827aac"
+      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.0/git-rekt-0.4.0-darwin-arm64.tar.gz"
+      sha256 "a2faf9d5fe1576b13a14bbd951194fdad28e99bb7a1964405b7e8d22839af60c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.3.1/git-rekt-0.3.1-linux-x86_64.tar.gz"
-      sha256 "1385cc89d02421760be572a47bc9a120c7f9e517ccd1143babd666a07376b7c6"
+      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.0/git-rekt-0.4.0-linux-x86_64.tar.gz"
+      sha256 "7ca135c8922e572be3831fb9e2039d7cc194b90372704b43f34f4bba206cd4e5"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.3.1/git-rekt-0.3.1-linux-arm64.tar.gz"
-      sha256 "537b67c655833a7436ea3a06cb895b91519cc49310697ca3360119bedf5c2284"
+      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.0/git-rekt-0.4.0-linux-arm64.tar.gz"
+      sha256 "a8aba1a3cdc77a8a48121512d3f5961bf2781df0c6c15af97b1ccdd4d73d7a83"
     end
   end
 
