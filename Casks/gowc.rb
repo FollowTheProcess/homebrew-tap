@@ -2,7 +2,7 @@
 cask "gowc" do
   desc "Implementation of wc in Go"
   homepage "https://github.com/FollowTheProcess/gowc"
-  version "0.5.0"
+  version "0.6.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "gowc" do
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.5.0/gowc-0.5.0-darwin-x86_64.tar.gz"
-      sha256 "ba2730dff3b52d8595ef74593c75048b0806b36be67579d8dd8195942feee2d4"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.0/gowc-0.6.0-darwin-x86_64.tar.gz"
+      sha256 "4bd922764aa2e9fc4287949bda19e1526a4a82c892813045a153c1b9ccb2eb42"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.5.0/gowc-0.5.0-darwin-arm64.tar.gz"
-      sha256 "f8d5f672e6f19da73e171017047ab1b28ab5840ca4e703718e777a87bb790674"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.0/gowc-0.6.0-darwin-arm64.tar.gz"
+      sha256 "672c110d05f6a4b3fed5c7ac171040cf7ccb622465996c04405f96c8dbca53e2"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.5.0/gowc-0.5.0-linux-x86_64.tar.gz"
-      sha256 "995128cdd1de6a9889b6b4298c6e27079eece98cc438bf3f1e9f82bbf9a90c7f"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.0/gowc-0.6.0-linux-x86_64.tar.gz"
+      sha256 "62d52be818f733fa5b7901049237105ed1c40e30011a0c4841a06bcf8f797977"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.5.0/gowc-0.5.0-linux-arm64.tar.gz"
-      sha256 "49e399d6771e8857665f8aa0600ea565318732f8e927f977542dfe1b00cfcd1a"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.0/gowc-0.6.0-linux-arm64.tar.gz"
+      sha256 "ed7d4e70034b572f06ee254859de63288b2403c6f072bf139a0331eb48b8cc78"
     end
   end
 
