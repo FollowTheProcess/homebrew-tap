@@ -2,7 +2,7 @@
 cask "tag" do
   desc "The all in one semver management tool"
   homepage "https://github.com/FollowTheProcess/tag"
-  version "0.8.2"
+  version "0.9.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "tag" do
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.8.2/tag-0.8.2-darwin-x86_64.tar.gz"
-      sha256 "a2a0d737863c099690e6121dfb99984633b07b0075a8291b60a58b7dc1e40a53"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.0/tag-0.9.0-darwin-x86_64.tar.gz"
+      sha256 "adde5272030b872551c65c729b497dbb3292e9566e42df6df0cd08e40e259f9e"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.8.2/tag-0.8.2-darwin-arm64.tar.gz"
-      sha256 "9c3c2d4fb2d83e2af2a608a3f48a10d486aa7420360e8798677d03da2f148777"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.0/tag-0.9.0-darwin-arm64.tar.gz"
+      sha256 "e0c9d19f0bc6c775695ee70d411a711ffd86be44ba210e65ce3f1e1e5b4ae854"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.8.2/tag-0.8.2-linux-x86_64.tar.gz"
-      sha256 "88ab49762787abc6c6b6f126821816f41af8a4c5b1e08112f24909223d4b6ddb"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.0/tag-0.9.0-linux-x86_64.tar.gz"
+      sha256 "f4563409103452a98477659b70450a40a269b8edc60f033dc372a710728714cb"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.8.2/tag-0.8.2-linux-arm64.tar.gz"
-      sha256 "1c26a5d5805b0e58a02d766488ec23a6ac85cea11d9046ec1c7d08ba526a739c"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.0/tag-0.9.0-linux-arm64.tar.gz"
+      sha256 "47d21d99f165f0a840dcb7096785a67e080b87b9abb5dfacf1995265b5d75981"
     end
   end
 
