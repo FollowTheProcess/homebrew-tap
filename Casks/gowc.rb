@@ -2,7 +2,7 @@
 cask "gowc" do
   desc "Implementation of wc in Go"
   homepage "https://github.com/FollowTheProcess/gowc"
-  version "0.6.0"
+  version "0.6.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,29 +12,25 @@ cask "gowc" do
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.0/gowc-0.6.0-darwin-x86_64.tar.gz"
-      sha256 "4bd922764aa2e9fc4287949bda19e1526a4a82c892813045a153c1b9ccb2eb42"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.1/gowc-0.6.1-darwin-x86_64.tar.gz"
+      sha256 "baa8afd622eb104c280ccfed0c65e263274278d019fd2fa31041c4d0d4c3210c"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.0/gowc-0.6.0-darwin-arm64.tar.gz"
-      sha256 "672c110d05f6a4b3fed5c7ac171040cf7ccb622465996c04405f96c8dbca53e2"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.1/gowc-0.6.1-darwin-arm64.tar.gz"
+      sha256 "7d293d231661cc783f803996d4aa7c1eb9d18f1fcb228b39911d71b1cd628684"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.0/gowc-0.6.0-linux-x86_64.tar.gz"
-      sha256 "62d52be818f733fa5b7901049237105ed1c40e30011a0c4841a06bcf8f797977"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.1/gowc-0.6.1-linux-x86_64.tar.gz"
+      sha256 "ac36d451b220d8b7df3d3a3f73ec8f801695ba7091ed42b3a46e96bf53729b4d"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.0/gowc-0.6.0-linux-arm64.tar.gz"
-      sha256 "ed7d4e70034b572f06ee254859de63288b2403c6f072bf139a0331eb48b8cc78"
+      url "https://github.com/FollowTheProcess/gowc/releases/download/v0.6.1/gowc-0.6.1-linux-arm64.tar.gz"
+      sha256 "91ce20c8e2bb9ad9ceb18bacc7e8cab142b90cae42fd335e237c398dc8839749"
     end
   end
-
-  conflicts_with formula: [
-      "gowc",
-    ]
 
   postflight do
     if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
