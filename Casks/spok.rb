@@ -2,7 +2,7 @@
 cask "spok" do
   desc "It's a build system Jim, but not as we know it!"
   homepage "https://github.com/FollowTheProcess/spok"
-  version "0.8.0"
+  version "0.8.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,29 +12,25 @@ cask "spok" do
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.8.0/spok-0.8.0-darwin-x86_64.tar.gz"
-      sha256 "df89319639ae761add14871ac6bdd19af34d8a0a31dcab0ad3c72e6527c3e169"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.8.1/spok-0.8.1-darwin-x86_64.tar.gz"
+      sha256 "7813bed0ff299550613fbf6ebb95730bb2ed771bac171342c0f0fbca78c47c35"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.8.0/spok-0.8.0-darwin-arm64.tar.gz"
-      sha256 "38264b1bdbbb0bb3fdc0309897aa8bf8d6f881945ab42f91d45aa3c014ff0ae4"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.8.1/spok-0.8.1-darwin-arm64.tar.gz"
+      sha256 "05611cdcda66d57129669260bc66364ab22de08151b397c90be63e5f59860160"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.8.0/spok-0.8.0-linux-x86_64.tar.gz"
-      sha256 "d56c45a19fce3228d4d73a2f8236dd9a08d7edbe8d71599e439a33e7f10a12c6"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.8.1/spok-0.8.1-linux-x86_64.tar.gz"
+      sha256 "8b1fa349726bfa6a6ceff5ed19d308a77effcf01ef7d99965da65c2797a13a25"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/spok/releases/download/v0.8.0/spok-0.8.0-linux-arm64.tar.gz"
-      sha256 "6fc9bbe461d424f13b9b7e47b91a45ec66de56ffabbaf503d7ad40cd8e30adf1"
+      url "https://github.com/FollowTheProcess/spok/releases/download/v0.8.1/spok-0.8.1-linux-arm64.tar.gz"
+      sha256 "028c989e4a6b4d63a7b4407282e5b1af2c42d1c0198f4c4eaf1e00dccff8f4b0"
     end
   end
-
-  conflicts_with formula: [
-      "spok",
-    ]
 
   postflight do
     if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
