@@ -2,7 +2,7 @@
 cask "git-rekt" do
   desc "A profoundly unhelpful git extension"
   homepage "https://github.com/FollowTheProcess/git-rekt"
-  version "0.4.0"
+  version "0.4.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,29 +12,25 @@ cask "git-rekt" do
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.0/git-rekt-0.4.0-darwin-x86_64.tar.gz"
-      sha256 "137412021947630c727da68f03eff76ebcd8f1d6f8783a2402361770a7229d64"
+      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.1/git-rekt-0.4.1-darwin-x86_64.tar.gz"
+      sha256 "1c1eb4f0f956d2fa819042bd5d17aa734c3b7fb3e33321d893824399c97952a6"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.0/git-rekt-0.4.0-darwin-arm64.tar.gz"
-      sha256 "a2faf9d5fe1576b13a14bbd951194fdad28e99bb7a1964405b7e8d22839af60c"
+      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.1/git-rekt-0.4.1-darwin-arm64.tar.gz"
+      sha256 "6943b68f39e1d006f9f5cbb1eba6ddef41e4b8b594d371910077f74661387227"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.0/git-rekt-0.4.0-linux-x86_64.tar.gz"
-      sha256 "7ca135c8922e572be3831fb9e2039d7cc194b90372704b43f34f4bba206cd4e5"
+      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.1/git-rekt-0.4.1-linux-x86_64.tar.gz"
+      sha256 "0019e5086f68b65776ab56c5906ceaaa3e996eafead9d3694227cf7e2bbdfa1e"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.0/git-rekt-0.4.0-linux-arm64.tar.gz"
-      sha256 "a8aba1a3cdc77a8a48121512d3f5961bf2781df0c6c15af97b1ccdd4d73d7a83"
+      url "https://github.com/FollowTheProcess/git-rekt/releases/download/v0.4.1/git-rekt-0.4.1-linux-arm64.tar.gz"
+      sha256 "21cee05f8615fe476abb136f2e334ee303a2dff76c9e12dc50523c92eabae51a"
     end
   end
-
-  conflicts_with formula: [
-      "git-rekt",
-    ]
 
   postflight do
     if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
