@@ -33,10 +33,6 @@ cask 'goignore' do
     end
   end
 
-  conflicts_with formula: [
-    'goignore'
-  ]
-
   postflight do
     if system_command('/usr/bin/xattr', args: ['-h']).exit_status.zero?
       system_command '/usr/bin/xattr', args: ['-dr', 'com.apple.quarantine', "#{staged_path}/goignore"]
