@@ -2,7 +2,7 @@
 cask "tag" do
   desc "The all in one semver management tool"
   homepage "https://github.com/FollowTheProcess/tag"
-  version "0.9.0"
+  version "0.9.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,29 +12,25 @@ cask "tag" do
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.0/tag-0.9.0-darwin-x86_64.tar.gz"
-      sha256 "adde5272030b872551c65c729b497dbb3292e9566e42df6df0cd08e40e259f9e"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.1/tag-0.9.1-darwin-x86_64.tar.gz"
+      sha256 "894026f2021d9c1293921734dfb1afe00b48dd6d2203a19ce0e927d81d3d2ab9"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.0/tag-0.9.0-darwin-arm64.tar.gz"
-      sha256 "e0c9d19f0bc6c775695ee70d411a711ffd86be44ba210e65ce3f1e1e5b4ae854"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.1/tag-0.9.1-darwin-arm64.tar.gz"
+      sha256 "35cd902ee919df662f953c0d4cebc44b575bb686deec07dee63a9f07071249df"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.0/tag-0.9.0-linux-x86_64.tar.gz"
-      sha256 "f4563409103452a98477659b70450a40a269b8edc60f033dc372a710728714cb"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.1/tag-0.9.1-linux-x86_64.tar.gz"
+      sha256 "5b2c1a745be7a6c2d24919edadabfb48aacdfbdb6eaf4d773db265c31da508e0"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.0/tag-0.9.0-linux-arm64.tar.gz"
-      sha256 "47d21d99f165f0a840dcb7096785a67e080b87b9abb5dfacf1995265b5d75981"
+      url "https://github.com/FollowTheProcess/tag/releases/download/v0.9.1/tag-0.9.1-linux-arm64.tar.gz"
+      sha256 "f5b82cb6d9f91a8573ee51001682d86b0d6c25d155bbe4ec4521561bd66e491d"
     end
   end
-
-  conflicts_with formula: [
-      "tag",
-    ]
 
   postflight do
     if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
