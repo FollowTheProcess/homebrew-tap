@@ -2,7 +2,7 @@
 cask "txtract" do
   desc "A CLI to interact with txtar archive files"
   homepage "https://github.com/FollowTheProcess/txtract"
-  version "0.3.1"
+  version "0.3.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,29 +12,25 @@ cask "txtract" do
 
   on_macos do
     on_intel do
-      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.1/txtract-0.3.1-darwin-x86_64.tar.gz"
-      sha256 "087dc9d54410c98d917abd2a70a9330480e97254633eeab7f36b3fe6ea7fd97e"
+      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.2/txtract-0.3.2-darwin-x86_64.tar.gz"
+      sha256 "9861147743844f2cf304cbb3bed52ef8081489c41754197d65945d4efd1cdefa"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.1/txtract-0.3.1-darwin-arm64.tar.gz"
-      sha256 "04de02d82cd2d6547ed57cf992d1f4dad394755f321c938d0c159d1299295739"
+      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.2/txtract-0.3.2-darwin-arm64.tar.gz"
+      sha256 "ea4ee0777e1fbb9fb8c0391fa5024acd001c30c8bac833cd94ccbef6f62acc79"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.1/txtract-0.3.1-linux-x86_64.tar.gz"
-      sha256 "5bc3652aacaba6439878b3c19b1170c20b25b20e172b998a15d2d36ed8f04a2b"
+      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.2/txtract-0.3.2-linux-x86_64.tar.gz"
+      sha256 "79ef3d693e0e98c740b3a9a7b0ade9554bffc1b3036fe8c483d657c1fb668e9a"
     end
     on_arm do
-      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.1/txtract-0.3.1-linux-arm64.tar.gz"
-      sha256 "3c4a4e3e087f374316264b7afba91503518811de5a99467bf9bd8d43560fb1ee"
+      url "https://github.com/FollowTheProcess/txtract/releases/download/v0.3.2/txtract-0.3.2-linux-arm64.tar.gz"
+      sha256 "a6e1c5cf00a84a8c570ef26438cf090c7c035573ec5a71ffe7e9dcf7eaf1dda3"
     end
   end
-
-  conflicts_with formula: [
-      "txtract",
-    ]
 
   postflight do
     if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
